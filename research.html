@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drought Research</title>
+    <style>
+      /* General Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        color: #ffffff;
+        background-color: #111111;
+        padding: 0;
+        margin: 0;
+      }
+
+      /* Go Back Button */
+      .go-back {
+        padding: 20px;
+        text-align: left;
+      }
+
+      .go-back-button {
+        background-color: #2ea44f;
+        color: #ffffff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background 0.3s ease;
+      }
+
+      .go-back-button:hover {
+        background-color: #1b8339;
+      }
+
+      /* Research Page Styles */
+      .research-page {
+        padding: 20px;
+        background-color: #111111;
+      }
+
+      /* Introduction Section */
+      #research-intro h1 {
+        font-size: 2.5rem;
+        color: #2ea44f;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .research-content p {
+        font-size: 1.1rem;
+        color: #cccccc;
+        line-height: 1.6;
+        max-width: 900px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      /* Research Cards */
+      .research-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #222222;
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 8px;
+        border: 1px solid #2ea44f;
+      }
+
+      .research-card img {
+        width: 40%;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      .research-card-content {
+        width: 55%;
+      }
+
+      .research-card-content h3 {
+        font-size: 1.5rem;
+        color: #2ea44f;
+        margin-bottom: 10px;
+      }
+
+      .research-card-content p {
+        font-size: 1rem;
+        color: #cccccc;
+        line-height: 1.6;
+      }
+
+      /* Section Heading */
+      #research-global h2,
+      #research-india h2,
+      #research-solutions h2 {
+        font-size: 2rem;
+        color: #2ea44f;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .research-card {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .research-card img {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+
+        .research-card-content {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="research-page">
+      <!-- Go Back Button -->
+      <div class="go-back">
+        <a href="javascript:history.back()">
+          <button class="go-back-button">Go Back</button>
+        </a>
+      </div>
+
+      <section id="research-intro">
+        <center>
+          <h1>Drought Research: A Global and Indian Perspective</h1>
+        </center>
+        <div class="research-content">
+          <p>
+            Drought is one of the most devastating natural calamities that
+            affects millions of people globally. It is a prolonged period of
+            deficient rainfall that leads to water shortages, poor crop yields,
+            and widespread economic distress. This research highlights the
+            causes, impacts, and potential solutions for droughts, with a
+            special focus on India and its growing challenges in managing
+            droughts.
+          </p>
+        </div>
+      </section>
+
+      <section id="research-global">
+        <center>
+          <h2>Global Impact of Drought</h2>
+        </center>
+        <div class="research-card">
+          <img src="globalpattern.jpg" alt="Global Drought" />
+          <div class="research-card-content">
+            <h3>Global Drought Patterns</h3>
+            <p>
+              Droughts are a global issue that have become increasingly severe
+              and frequent due to climate change. The United Nations reports
+              that nearly 55 million people globally are affected by drought
+              every year. The impacts range from water scarcity to food
+              insecurity, and it is expected that droughts will become more
+              frequent as the planet's climate changes.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="research-india">
+        <center>
+          <h2>The Drought Crisis in India</h2>
+        </center>
+        <div class="research-card">
+          <img src="indiaswater.jpeg" alt="Drought in India" />
+          <div class="research-card-content">
+            <h3>India’s Water Crisis</h3>
+            <p>
+              India is one of the most drought-prone countries in the world,
+              with over 50% of its landmass being vulnerable to drought
+              conditions. The country experiences severe droughts, especially in
+              the arid regions of Rajasthan, Gujarat, and Maharashtra. With over
+              600 million people dependent on agriculture, the agricultural
+              sector is particularly vulnerable to droughts, affecting both food
+              production and livelihoods.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="research-solutions">
+        <center>
+          <h2>Potential Solutions to Mitigate Drought Effects</h2>
+        </center>
+        <div class="research-card">
+          <img src="waterconserve.jpg" alt="Drought Solutions" />
+          <div class="research-card-content">
+            <h3>Water Conservation and Technology</h3>
+            <p>
+              Solutions to combat drought include improving water conservation
+              practices, implementing efficient irrigation technologies, and
+              enhancing water storage capacity. In India, initiatives like
+              rainwater harvesting and micro-irrigation systems are being
+              promoted to improve water management in drought-affected areas.
+              Globally, countries are adopting desalination technologies and
+              water reuse practices to meet the growing water demand.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
